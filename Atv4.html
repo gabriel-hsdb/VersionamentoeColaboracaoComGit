@@ -35,18 +35,15 @@
 
     <script>
         function calcular() {
-            // 1. Pegar os valores que precisamos
             var capital = 1000;
-            var taxa = 0.05; // 5 dividido por 100
+            var taxa = 0.05; 
             var meses = document.getElementById('campoMeses').value;
 
-            // 2. Fazer a conta de juros (J = C * i * t)
             var totalJuros = capital * taxa * meses;
 
-            // 3. Somar o capital inicial com os juros para saber o total
+           
             var valorFinal = capital + totalJuros;
 
-            // 4. Mostrar na tela para o usuário
             var divResultado = document.getElementById('resultado');
             
             divResultado.innerHTML = "<h4>Resultado:</h4>" +
